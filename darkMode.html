@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo Claro / Modo Escuro </title>
+</head>
+<body>
+    <div id="container">
+        <h1> Modo Claro / Modo Escuro</h1>
+        <label class="switch">
+            <input type="checkbox" onclick="changeMode()">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <script>
+        function changeMode()
+        {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
